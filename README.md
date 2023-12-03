@@ -14,11 +14,11 @@ The server will track clients that have connected to the server. When a client r
 
  
 
-The RPC server should take one command line argument:\
+The RPC server should take one command line argument: \
 
-port: The port that the server will bind itself to
+**port**: The port that the server will bind itself to
 server_functions.h and server_functions.c contain the implementations of the RPC stubs for the server to execute. If you use the given Makefile this will build all of the file with your server.c file automatically. This file contains the following implementations:
-
+\
 idle
 This sleeps the thread for a given number of seconds. In practice this is just a wrapper for sleep.
 get
